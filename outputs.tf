@@ -38,3 +38,8 @@ output "subnet_cidr_range" {
     value = google_compute_subnetwork.subnetwork.ip_cidr_range
     description = "Node CIDR range for demo cluster"
 }
+
+output "load_balancer_ip" {
+    value = module.gce-lb-http.external_ip
+    description = "The IPv4 address for the global load balancer"
+}

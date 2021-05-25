@@ -33,12 +33,18 @@ variable "zone" {
 
 variable "network_name" {
     type = string
-    default = "gke-demo-network"
+    default = "iap-demo-network"
     description = "Name of the network that will be created for the demo"
 }
 
 variable "subnet_name" {
     type = string
-    default = "gke-demo-subnet"
+    default = "iap-demo-subnet"
     description = "Name of the subnet that will be created for the backend instance"
+}
+
+
+variable "support_email" {
+    type = string
+    description = "support email to reach out to regarding oauth issues"
 }
