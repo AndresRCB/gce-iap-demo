@@ -78,10 +78,11 @@ module "mig_template" {
   version    = "6.4.0"
   network    = google_compute_network.network.self_link
   subnetwork = google_compute_subnetwork.subnetwork.self_link
-  machine_type    = "e2-custom-2-8192"
-  disk_size_gb = 200
+  # machine_type    = "e2-custom-2-8192"
+  # disk_size_gb = 100
+  machine_type = "e2-medium"
+  disk_size_gb = 40
   disk_type = "pd-ssd"
-  # source_image = "debian-10"
   source_image_family = "debian-10"
   source_image_project = "debian-cloud"
   service_account = {
