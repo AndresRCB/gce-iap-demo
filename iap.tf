@@ -2,11 +2,11 @@
 
 resource "google_iap_brand" "project_brand" {
   support_email     = var.support_email
-  application_title = "Cloud IAP protected Application"
+  application_title = var.application_name
   project           = module.project.project_id
 }
 
 resource "google_iap_client" "project_client" {
-  display_name = "Test Client"
+  display_name =  var.client_display_name
   brand        =  google_iap_brand.project_brand.name
 }

@@ -19,6 +19,23 @@ variable "folder_id" {
     default = ""
 }
 
+variable "support_email" {
+    type = string
+    description = "support email to reach out to regarding oauth issues"
+}
+
+variable "application_name" {
+    type = string
+    default = "Cloud IAP protected Application"
+    description = "Application name to show in account authorization screen"
+}
+
+variable "client_display_name" {
+    type = string
+    default = "Test IAP Client"
+    description = "IAP client name"
+}
+
 variable "region" {
     type = string
     default = "us-central1"
@@ -41,10 +58,4 @@ variable "subnet_name" {
     type = string
     default = "iap-demo-subnet"
     description = "Name of the subnet that will be created for the backend instance"
-}
-
-
-variable "support_email" {
-    type = string
-    description = "support email to reach out to regarding oauth issues"
 }

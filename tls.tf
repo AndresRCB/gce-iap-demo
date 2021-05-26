@@ -1,3 +1,4 @@
+# We're using a self-signed certificate to keep things simple. Almost always, users will want to use a public certificate or their own certificate authority, but that's outside the scope of this demo.
 
 resource "tls_private_key" "example" {
   algorithm = "RSA"
