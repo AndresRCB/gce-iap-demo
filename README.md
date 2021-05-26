@@ -1,4 +1,4 @@
-# GCP Identity-Aware Proxy (IAP) over External and Internal Load Balancers
+# GCP Identity-Aware Proxy (IAP) over External Load Balancers
 
 A demo of how IAP can secure internal applications via external and internal Google Cloud Load Balancers. This document follows concepts and takes resources from the following links:
 - [Identity-Aware Proxy Concepts](https://cloud.google.com/iap/docs/concepts-overview)
