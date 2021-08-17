@@ -43,3 +43,8 @@ output "load_balancer_ip" {
     value = module.gce-lb-http.external_ip
     description = "The IPv4 address for the global load balancer"
 }
+
+output "load_balancer_ip_2" {
+    value = module.gce-lb-http-2.external_ip
+    description = "The IPv4 address for the global load balancer"
+}
